@@ -23,6 +23,6 @@ Tip: You may need to set port forwarding if using VirtualBox.
 
 ### Access your own data file
 Create a some test data in ```~/test-data/test.json``` then mount that volume in the container.
-```docker run -it -p 8047:8047 -v ~/test-data:/data drill```
+```docker run -it -p 8047:8047 -v ~/test-data:/data jimfdavies/drill```
 At the Drill command line or in the Web UI, use the File system Storage plugin to find your file from ```/```.
 ```SELECT * FROM dfs.`/data/test.json`;```
