@@ -1,4 +1,5 @@
 FROM java:8-jre-alpine
+MAINTAINER Jim Davies
 
 ENV DRILL_VERSION 1.6.0
 
