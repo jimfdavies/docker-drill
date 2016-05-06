@@ -11,4 +11,6 @@ RUN mkdir -p /opt/ && \
 
 WORKDIR /opt/apache-drill-$DRILL_VERSION/
 
+EXPOSE 8047 8047
+
 ENTRYPOINT ["bin/drill-embedded"]
